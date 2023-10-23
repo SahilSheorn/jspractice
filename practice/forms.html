@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <script>
+        function abcform()
+        {
+            let name = document.sahil.name.value;
+            let password = document.sahil.password.value;
+            // let re_password = document.sahil.re_password.value
+            
+            if(name==null || name=="" || name.length<3)
+            {
+                alert("Name is not valid");
+                return false;
+            }
+           else if(!/^[a-zA-Z]*$/g.test(document.sahil.name.value))
+           {
+                alert("Invalid characters");
+                document.sahil.name.value();
+                return false;
+           }
+            else if(password.length<6)
+            {
+                alert("Password is to short!");
+                return false;
+            } 
+            else if(password.toUpperCase()!=password)
+            {
+                alert("invalid password");
+            }
+            else if( password.localeCompare(password))
+            {
+                alert("Password is not match")
+                return false;
+            }
+        }
+    </script>
+    <body>
+        <h1 class="heading">Register to kodu original site</h1>
+    <div class="container">
+        <div class="myform">
+             <form class="forms" name="sahil" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return abcform()">
+             name: <input class="names" type="text" name="name">
+             <br>
+             password: <input class="pass" type="password" name="password">
+             <br>
+             <!-- re_password: <input class="repass" type="password" name="password">
+             <br> -->
+             <input class="btn" type="submit" value="signup">
+             </form>
+        </div>
+    </div>
+</body>
+</html>

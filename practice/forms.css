@@ -1,0 +1,29 @@
+.heading{
+    text-align: center;
+    margin-top:  5%;
+}
+
+.myform{
+    border: 3px solid rgb(25, 246, 5);
+    border-radius: 7px;
+    margin: 3% 37%;
+    padding: 15px 20px;
+    line-height: 35px;
+}
+.pass{
+    margin-left: 13%;
+}
+.repass{
+    margin-left: 8%;
+}
+.myform .names{
+    margin-left: 21%;
+}
+.btn{
+    margin-top: 20px;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+}

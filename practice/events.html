@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="window.alert('wait page is loading');">
+    <!-- onload evwnt -->
+    <script>  
+    document.write("Welcome to my Events");     
+    </script>  
+    <br><br>
+
+
+
+    <!-- onclick Event -->
+    <script>
+    function clickevent()
+	{
+		document.write("Hello Sir");
+	}
+    </script>
+    <form>  
+    <input type="button" onclick="clickevent()" value="TAP HERE"/>  
+    </form> 
+
+
+
+    <!-- onmouseover Event -->
+    <script>
+    function mouseoverevent()
+    {
+        alert("My eyes on youuuu!")
+    }
+    </script>
+    <p onmouseover="mouseoverevent()">Shift mouse on me! mouseoverevent</p>
+
+   
+
+     onmouseout Event
+    <script>
+    function onmouseout()
+    {
+        console.log('This is onmouseout')
+        alert("What are you doing!")
+    }
+    </script>
+    <div onmouseleave="onmouseout()">Click me and see magic onmouseout</div>
+ 
+
+ 
+     onmousedown Event 
+    <input type="text" id="demon_21" onfocus="onmousedown()">
+    <script>
+    function onmousedown()
+    {
+        document.getElementById("demon_21").style.background="red"
+    }
+    </script>
+    <br><br><br>
+
+
+
+    <!-- onfocus Event -->
+    <input type="text" id="demon_2" onfocus="focusevent()">
+    <script>
+    function focusevent()
+    {
+        document.getElementById("demon_2").style.background="red"
+    }
+    </script>
+    <br><br><br>
+
+
+
+    <!-- onkeydown Event -->
+    <input type="text" id="demon01" onkeydown="keydownevent()"/> 
+    <script>
+    function keydownevent()  
+    {  
+        document.getElementById("demon01");  
+        alert("Dont touch my keys");  
+    }  
+    </script> 
+
+
+    <!-- onload Event -->
+
+
+</body>
+</html>
